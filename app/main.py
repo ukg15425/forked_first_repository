@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -5,5 +6,6 @@ app = FastAPI()
 
 @app.get("/")
 async def home():
-    # changes
+    # changes for the second time
+    print('ciao')
     return "furia balcanica"
